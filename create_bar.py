@@ -1,6 +1,4 @@
 import os
-import sys
-from PIL import Image
 import shutil
 import imageio.v2 as imageio
 import numpy as np
