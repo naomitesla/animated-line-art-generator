@@ -17,13 +17,13 @@ This was created to make my GitHub markdown look fancier but I oftend ended up u
 
 ### CLI Interaction
 
-> <img  width=400  src="https://user-images.githubusercontent.com/110672478/213885409-28a0213a-73d6-47c2-9ccd-ea35cf6647bd.png"  alt="CLI Example">
+> <img  width=400  src="https://user-images.githubusercontent.com/110672478/213885457-f3b6462b-bfd6-41d1-bc1f-a9093df154fe.png"  alt="CLI Example">
 
-  
+ 
 
 <br  /><br  />
 
-  
+### Examples
 
 <pre>
 400, #000000, #FFFFFF, 25
