@@ -1,6 +1,6 @@
-from bar import Bar
 import sys
 import colorama
+from bar import Bar
 
 
 class color:
