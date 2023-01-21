@@ -1,5 +1,5 @@
 
-# Animated Line Art Generator
+# ALA (Animated Line Art... generator)
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
 **Create custom animated line art for websites and markdown!**
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
