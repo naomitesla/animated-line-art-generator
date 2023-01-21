@@ -1,13 +1,14 @@
 
 # ALA (Animated Line Art... generator)
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
-**Create custom animated line art for websites and markdown!**
+ &nbsp; **Create custom animated line art for websites and markdown!**
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
 
 <br /><br />
 
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
-This was created to make my GitHub markdown look fancier but I oftend ended up using it for other applications so I decided to open-source it c:
+&nbsp; This was created to make my GitHub markdown look fancier but I oftend ended up using it for other applications so I
+&nbsp;&nbsp;decided to open-source it c:
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
 
 
@@ -43,4 +44,6 @@ This was created to make my GitHub markdown look fancier but I oftend ended up u
 
 
 <br /><br /><br /><br /><br />
+<img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
+ &nbsp; Enjoy! c:
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
