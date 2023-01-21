@@ -17,7 +17,7 @@ This was created to make my GitHub markdown look fancier but I oftend ended up u
 
 ### CLI Interaction
 
-> <img  width=400  src="https://user-images.githubusercontent.com/110672478/213882769-18c1592c-ed15-471b-b91d-8ba613d46922.png"  alt="CLI Example">
+> <img  width=400  src="https://user-images.githubusercontent.com/110672478/213885409-28a0213a-73d6-47c2-9ccd-ea35cf6647bd.png"  alt="CLI Example">
 
   
 
@@ -26,7 +26,7 @@ This was created to make my GitHub markdown look fancier but I oftend ended up u
   
 
 <pre>
-400, #00000, #FFFFFF, 25
+400, #000000, #FFFFFF, 25
 </pre>
 
 > <img src="https://user-images.githubusercontent.com/110672478/213883564-2ece7ffb-ade8-4210-920a-80f9e2d33ed2.gif"  alt="Example A">
