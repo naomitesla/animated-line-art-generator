@@ -22,8 +22,8 @@ def entry():
     print(start)
     try:
         bar = Bar(int(input(input_str('Width (px)'))),
-                [input(input_str('Background color(RGB/Hex)')),
-                input(input_str('Secondary color(RGB/Hex)'))],
+                [input(input_str('Background color (RGB/Hex)')),
+                input(input_str('Secondary color (RGB/Hex)'))],
                 input(input_str('Passing line width (px)')),
                 input(input_str('Filename without extension')))
         Bar.create(bar)
