@@ -7,7 +7,7 @@
 <br /><br />
 
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
-This was created to make my GitHub markdown look fancier but I oftend ended up using it for other applications so I decided to open-source it c:
+This was created to make my GitHub markdown look fancier but I ended up using it for other applications so I decided to open-source it c:
 <img width=1000 src="https://user-images.githubusercontent.com/110672478/213883818-2d61fe01-de6b-449a-95c3-c20947fb4d33.gif"  alt="cool line art c:">
 
 
