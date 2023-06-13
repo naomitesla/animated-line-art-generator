@@ -23,8 +23,8 @@ class Bar:
         for h in hex:
             sanitized.append([int(h.strip().lstrip('#')[i:i+2], 16)
                              for i in (0, 2, 4)])
-        
-        sanitized = [sanitized[0], [0,0,0], sanitized[1]]
+
+        sanitized = [sanitized[0], [0, 0, 0], sanitized[1]]
         return sanitized
 
     def sanitize_colors_rgb(self, rgb):
