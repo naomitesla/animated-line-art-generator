@@ -17,9 +17,8 @@ This was created to make my GitHub markdown look fancier but I ended up using it
 
 ### CLI Interaction
 
-> <img  width=400  src="https://user-images.githubusercontent.com/110672478/213885457-f3b6462b-bfd6-41d1-bc1f-a9093df154fe.png"  alt="CLI Example">
+> <img width="400" alt="CLI Example c:" src="https://github.com/NaomiTesla/animated-line-art-generator/assets/110672478/394e5ee9-2bda-48d9-ab57-5600a79954d4">
 
- 
 
 <br  /><br  />
 
