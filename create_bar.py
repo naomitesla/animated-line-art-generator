@@ -21,18 +21,18 @@ def create_png(pixels, intersection, colors, image_stack):
     data = np.full((1, pixels, 3), fill_value=base_color, dtype=np.uint8)
     py_path = os.path.abspath(__file__)
     py_dir = os.path.dirname(py_path)
-    py_dir_tmp = py_dir + "\\tmp\\"
+    py_dir_tmp = py_dir + '\\tmp\\'
     os.chdir(py_dir)
 
     try:
         os.mkdir('tmp')
     except FileExistsError:
-        print("""
+        print('''
             
             exception FileExistsError: Folder already exists!
             Program did not shutdown gracefully on last run!
 
-            """)
+            ''')
     for i in range(0, pixels+intersection):
         if i < pixels:
             data[0, i] = secondary_color
@@ -49,7 +49,7 @@ def create_png(pixels, intersection, colors, image_stack):
             data[0, remainder-1] = base_color
             data[0, remainder] = mixed_color
         if not i % 10:
-            new_image = py_dir_tmp + str(i+1) + ".png"
+            new_image = py_dir_tmp + str(i+1) + '.png'
             imageio.imwrite(new_image, data)
             image_stack.append(imageio.imread(new_image))
 

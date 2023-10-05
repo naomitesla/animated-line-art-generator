@@ -3,16 +3,16 @@ from create_bar import create_bar
 
 
 class Bar:
-    def __init__(self, pixels: int, unsanitized_colors: list, intersection_width: float, filename: str):
-        assert pixels > 0, f"Supplied px for width, is not > zero! D:"
+    def __init__(self, pixels: int, unsanitized_colors: list, intersection_width: float, speed: int, filename: str):
+        assert pixels > 0, f'Supplied px for width, is not > zero! D:'
 
-        # size_dict = {"large": 1, "medium": 2, "smaller":6, "smallest":98}
+        # size_dict = {'large': 1, 'medium': 2, 'smaller':6, 'smallest':98}
         # self.intersection = pixels//intersection_width
 
         self.pixels = int(pixels)
         self.unsanitized_colors = unsanitized_colors
         self.intersection = abs(int(intersection_width))
-        self.filename = str(filename).strip() + ".gif"
+        self.filename = str(filename).strip() + '.gif'
         self.colors = []
 
     def __repr__(self, bar):
@@ -29,7 +29,7 @@ class Bar:
 
     def sanitize_colors_rgb(self, rgb):
         sanitized = []
-        rgb_pattern = re.compile(r"[^0-9,]", re.I)
+        rgb_pattern = re.compile(r'[^0-9,]', re.I)
         for r in rgb:
             r = re.sub(rgb_pattern, '', r).strip()
             sanitized.append(r.split(','))
@@ -44,7 +44,7 @@ class Bar:
             else:
                 self.colors = self.sanitize_colors_rgb(unsanitized)
         except:
-            print("\n"*2 + "\t" + "Invalid color input! :o")
+            print('\n'*2 + '\t' + 'Invalid color input! :o')
 
     def create(self):
         self.sanitize_colors(self.unsanitized_colors)
