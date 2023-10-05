@@ -4,11 +4,13 @@ from create_bar import create_bar
 
 class Bar:
     def __init__(self, pixels: int, intersection_width: float, unsanitized_colors: list, speed: int, filename: str):
-        assert pixels > 0, f'Supplied px for width, is not > zero! D:'
-        
+        assert pixels > 0, 'Supplied px for width, is not > zero! D:'
+        assert speed > 0, 'Supplied input for speed, is not > zero! D:'
+
         self.pixels = int(pixels)
-        self.unsanitized_colors = unsanitized_colors
         self.intersection = abs(int(intersection_width))
+        self.unsanitized_colors = unsanitized_colors
+        self.speed = int(speed)
         self.filename = str(filename.replace('.gif', '')).strip() + '.gif'
         self.colors = []
 
