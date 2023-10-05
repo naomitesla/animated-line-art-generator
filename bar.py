@@ -3,19 +3,16 @@ from create_bar import create_bar
 
 
 class Bar:
-    def __init__(self, pixels: int, unsanitized_colors: list, intersection_width: float, speed: int, filename: str):
+    def __init__(self, pixels: int, intersection_width: float, unsanitized_colors: list, speed: int, filename: str):
         assert pixels > 0, f'Supplied px for width, is not > zero! D:'
-
-        # size_dict = {'large': 1, 'medium': 2, 'smaller':6, 'smallest':98}
-        # self.intersection = pixels//intersection_width
-
+        
         self.pixels = int(pixels)
         self.unsanitized_colors = unsanitized_colors
         self.intersection = abs(int(intersection_width))
-        self.filename = str(filename).strip() + '.gif'
+        self.filename = str(filename.replace('.gif', '')).strip() + '.gif'
         self.colors = []
 
-    def __repr__(self, bar):
+    def __repr__(self):
         return f"class: {self.__class__.__name__}, 'A {self.pixels}px bar with the colors: {self.unsanitized_colors}'"
 
     def sanitize_colors_hex(self, hex):
