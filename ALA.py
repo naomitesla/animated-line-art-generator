@@ -1,4 +1,4 @@
-import colorama
+from colorama import Style
 from bar import Bar
 
 
@@ -8,10 +8,10 @@ class colors:
     green = '\u001b[38;5;82m'
 
 
-reset = colorama.Style.RESET_ALL
+reset = Style.RESET_ALL
 start = colors.red + '\n' + '╒' + '═'*50 + '╕' + colors.green + reset
 end = colors.red + '╘' + '═'*50 + '╛' + '\n' + reset
-def input_str(input): return f'{colors.green}   {input}: {colors.pink}'
+def input_pretty(input): return f'{colors.green}   {input}: {colors.pink}'
 
 
 def entry():
@@ -19,12 +19,12 @@ def entry():
     padding = '\n' * 2 + '\t'
     print(start)
     try:
-        bar = Bar(int(input(input_str('Width (px)'))),
-                  input(input_str('Passing line width (px)')),
-                  [input(input_str('Background color (RGB/Hex)')),
-                   input(input_str('Secondary color (RGB/Hex)'))],
-                  input(input_str('Speed')),
-                  input(input_str('Filename')))
+        bar = Bar(int(input(input_pretty('Width (px)'))),
+                  int(input(input_pretty('Passing line width (px)'))),
+                  [input(input_pretty('Background color (RGB/Hex)')),
+                   input(input_pretty('Secondary color (RGB/Hex)'))],
+                  int(input(input_pretty('Speed (1-100)'))),
+                  input(input_pretty('Filename')))
         Bar.create(bar)
         status = 0
     except KeyboardInterrupt:

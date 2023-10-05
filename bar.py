@@ -5,7 +5,7 @@ from create_bar import create_bar
 class Bar:
     def __init__(self, pixels: int, intersection_width: float, unsanitized_colors: list, speed: int, filename: str):
         assert pixels > 0, 'Supplied px for width, is not > zero! D:'
-        assert speed > 0, 'Supplied input for speed, is not > zero! D:'
+        assert 100 >= speed >= 1, 'Supplied input for speed needs to be between 1 and 100!!! :o'
 
         self.pixels = int(pixels)
         self.intersection = abs(int(intersection_width))
@@ -47,4 +47,5 @@ class Bar:
 
     def create(self):
         self.sanitize_colors(self.unsanitized_colors)
-        create_bar(self.pixels, self.colors, self.intersection, self.filename)
+        create_bar(self.pixels, self.intersection,
+                   self.colors, self.speed, self.filename)

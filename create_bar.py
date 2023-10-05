@@ -12,7 +12,7 @@ def assign_colors(colors):
     return [colors[0], find_bright_mixed(colors[1]), colors[2]]
 
 
-def create_png(pixels, intersection, colors, image_stack):
+def create_png(pixels, intersection, colors, speed, image_stack):
     color_arr = assign_colors(colors)
     base_color = color_arr[0]
     mixed_color = color_arr[1]
@@ -33,7 +33,10 @@ def create_png(pixels, intersection, colors, image_stack):
             Program did not shutdown gracefully on last run!
 
             ''')
-    for i in range(0, pixels+intersection):
+
+    buffer = 0
+    for i in range(0, pixels + intersection):
+        buffer += 1
         if i < pixels:
             data[0, i] = secondary_color
             if i < pixels-2:
@@ -48,7 +51,9 @@ def create_png(pixels, intersection, colors, image_stack):
             remainder = i-intersection
             data[0, remainder-1] = base_color
             data[0, remainder] = mixed_color
-        if not i % 10:
+
+        if buffer == speed:
+            buffer = 0
             new_image = py_dir_tmp + str(i+1) + '.png'
             imageio.imwrite(new_image, data)
             image_stack.append(imageio.imread(new_image))
@@ -62,8 +67,8 @@ def cleanup():
     shutil.rmtree('tmp')
 
 
-def create_bar(pixels, colors, intersection, filename):
+def create_bar(pixels, intersection, colors, speed, filename):
     image_stack = []
-    create_png(pixels, intersection, colors, image_stack)
+    create_png(pixels, intersection, colors, speed, image_stack)
     stitch_gif(filename, image_stack)
     cleanup()
